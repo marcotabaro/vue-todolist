@@ -28,15 +28,22 @@
     <div class="container">
         <div class="row">
             <div class="col-12 d-flex justify-content-center align-items-center">
-                <input type="text" v-model="inputText" value="">
-                <button type="button" name="button" @click="addInput">Invio</button>
+                <input v-on:keyup.enter='addInput' class='form-control' type="text" v-model="inputText" value="">
+                <button class='btn btn-outline-secondary' type="button" name="button" @click="addInput">Invio</button>
             </div>
-                <ul>
-                    <li class='d-flex row-reverse justify-content-center align-items-center' v-for="(element, index) in inputUser">
-                        <div> {{ element }} </div>
-                        <button type='button' @click='inputRemove(index)'>X</button>
-                    </li>
-                </ul>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12">
+                            <ul class='d-flex flex-column-reverse'>
+                                <li class='form-control d-flex justify-content-between align-items-center' v-for="(element, index) in inputUser">
+                                    <div> {{ element }} </div>
+                                    <button class='align-self-end' type='button' @click='inputRemove(index)'>X</button>
+                                </li>
+                                </ul>
+                        </div>
+                    </div>
+                </div>
+                    
         </div>
     </div>
 </div>
