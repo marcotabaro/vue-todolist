@@ -29,8 +29,14 @@
         <div class="row">
             <div class="col-12 d-flex justify-content-center align-items-center">
                 <input type="text" v-model="inputText" value="">
-	            <button type="button" name="button" @click="arrayInput">Invio</button>
+                <button type="button" name="button" @click="addInput">Invio</button>
             </div>
+                <ul>
+                    <li class='d-flex row-reverse justify-content-center align-items-center' v-for="(element, index) in inputUser" v-model="index">
+                        <div> {{ element }} </div>
+                    </li>
+                </ul>
+            
         </div>
     </div>
 </div>

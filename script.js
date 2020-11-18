@@ -14,8 +14,11 @@ const myPlace = new Vue({
         inputText: ''
     },
     methods: {
-        arrayInput: function(){
+        addInput: function(){
             this.inputUser.push(this.inputText);
-        }
+            this.inputText = '';
+        },
+        removeInput
+
     }
 })
