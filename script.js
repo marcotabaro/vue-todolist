@@ -15,8 +15,12 @@ const myPlace = new Vue({
     },
     methods: {
         addInput: function(){
+        if(this.inputText == ''){
+            alert('Per favore inserisci qualcosa')
+        } else {
             this.inputUser.push(this.inputText);
             this.inputText = '';
+        }
         },
         inputRemove: function (delIndex){
             this.inputUser.splice(delIndex, 1)
