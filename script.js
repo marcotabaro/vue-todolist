@@ -11,12 +11,13 @@ const myPlace = new Vue({
     el:'#root',
     data:{
         inputUser: [],
-        inputText: ''
+        inputText: '',
+        isClicked: false
     },
     methods: {
         addInput: function(){
         if(this.inputText == ''){
-            alert('Per favore inserisci qualcosa')
+            alert('Per favore inserisci un valore')
         } else {
             this.inputUser.push(this.inputText);
             this.inputText = '';
@@ -24,6 +25,12 @@ const myPlace = new Vue({
         },
         inputRemove: function (delIndex){
             this.inputUser.splice(delIndex, 1)
+        },
+        colorChange: function (){
+            addClass
+        },
+        toggleIsClicked: function() {
+            this.isClicked = !this.isClicked
         }
     }
 })
