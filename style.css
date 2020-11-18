@@ -3,3 +3,12 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+header {
+    height: 100px;
+}
+
+header > .container > .row > .col-12 > img{
+    max-height: 100px;
+}
+
