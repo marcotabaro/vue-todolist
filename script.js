@@ -18,5 +18,8 @@ const myPlace = new Vue({
             this.inputUser.push(this.inputText);
             this.inputText = '';
         },
+        inputRemove: function (delIndex){
+            this.inputUser.splice(delIndex, 1)
+        }
     }
 })

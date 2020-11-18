@@ -34,6 +34,7 @@
                 <ul>
                     <li class='d-flex row-reverse justify-content-center align-items-center' v-for="(element, index) in inputUser">
                         <div> {{ element }} </div>
+                        <button type='button' @click='inputRemove(index)'>X</button>
                     </li>
                 </ul>
         </div>
