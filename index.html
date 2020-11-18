@@ -32,11 +32,10 @@
                 <button type="button" name="button" @click="addInput">Invio</button>
             </div>
                 <ul>
-                    <li class='d-flex row-reverse justify-content-center align-items-center' v-for="(element, index) in inputUser" v-model="index">
+                    <li class='d-flex row-reverse justify-content-center align-items-center' v-for="(element, index) in inputUser">
                         <div> {{ element }} </div>
                     </li>
                 </ul>
-            
         </div>
     </div>
 </div>

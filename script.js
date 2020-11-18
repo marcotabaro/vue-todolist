@@ -18,7 +18,5 @@ const myPlace = new Vue({
             this.inputUser.push(this.inputText);
             this.inputText = '';
         },
-        removeInput
-
     }
 })
